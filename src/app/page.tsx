@@ -13,7 +13,7 @@ import FeedbackCarousel from "@/component/Feedback/Feedback";
 import GrowPart from "@/component/GrowPart/GrowPart";
 import { Mail, LayoutDashboard, Database, Bell, Upload, ClipboardList } from "lucide-react";
 import BusinessStory from "@/component/BusinessStory/BusinessStory";
-import FooterPage from "@/component/FooterPage/FooterPage";
+
 
 export default function Home() {
   // ✅ AOS setup
@@ -72,7 +72,10 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center mb-12">
-          <h2 className="text-6xl font-bold text-[#084d0c]">Our Features</h2>
+          <h2 className="text-5xl font-bold  text-[#084d0c]">Our Features</h2>
+          <div className="flex justify-center mt-4 mb-6">
+            <span className="w-16 h-1 bg-green-500 rounded-full"></span>
+            </div>
           <p className="text-[#084d0c] mt-5 text-xl">
             Discover powerful features designed to enhance your experience and improve efficiency.
           </p>
@@ -101,7 +104,7 @@ export default function Home() {
       {/* BusinessStory Part */}
       <BusinessStory />
 
-      <FooterPage />
+      {/* <FooterPage /> */}
     </>
   );
 }

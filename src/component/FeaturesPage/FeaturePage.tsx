@@ -34,6 +34,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
           {icon}
         </div>
         <h3 className="text-xl font-bold mb-2">{title}</h3>
+        
         <p className=" text-lg">{description}</p>
       </div>
     </div>

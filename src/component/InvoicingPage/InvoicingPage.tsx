@@ -4,7 +4,7 @@ const InvoicingPage = () => {
   return (
     <>
     {/* Invoice page */}
-<div className="invoice-wrapper flex flex-col md:flex-row justify-between items-center h-screen px-6 md:px-16">
+    <div className="invoice-wrapper flex flex-col md:flex-row justify-between items-center h-screen px-6 md:px-16">
   
   {/* Left Side - Text */}
   <div className="invoice-content max-w-xl text-center md:text-left space-y-6 md:ml-12">
@@ -24,7 +24,7 @@ const InvoicingPage = () => {
   <div className="invoice-img mt-10 md:mt-0 md:ml-10 " data-aos="fade-up-left">
     <img src="/images/image3.jpg" alt="invoice img" className="max-w-2xl rounded-xl shadow-xl shadow-black/50" />
   </div>
-</div>
+    </div>
 
     {/* invoice second part */}
       <div className='grow-wrapper flex justify-around items-center'>
@@ -42,7 +42,7 @@ const InvoicingPage = () => {
            
   
             </div>
-            </div>
+        </div>
 </>
   )
 }

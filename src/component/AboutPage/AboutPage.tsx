@@ -20,7 +20,7 @@ const AboutPage = () => {
   <button className="px-8 py-3 bg-green-500 hover:bg-green-800 text-white font-semibold rounded-lg shadow-lg">
     Learn More
   </button>
-</div>
+    </div>
     </div>
 
     {/* about box  */}
