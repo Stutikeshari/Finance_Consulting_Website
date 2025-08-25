@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Globe, Menu, X } from "lucide-react"; // Icons
+import Image from "next/image";
 
 
 // Language map (code → label)
@@ -64,7 +65,7 @@ const Navbar = () => {
       >
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img
+          <Image
             src="/images/logo-bird.jpg"
             alt="Web Logo"
             className="h-10 w-20 rounded-lg"
@@ -157,7 +158,7 @@ const Navbar = () => {
       >
         {/* Close Button */}
         <div className="flex justify-between items-center px-4 py-3 border-b border-green-700">
-          <img
+          <Image
             src="/images/logo-bird.jpg"
             alt="Web Logo"
             className="h-10 w-20 rounded-lg"

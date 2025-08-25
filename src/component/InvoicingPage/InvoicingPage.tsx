@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const InvoicingPage = () => {
@@ -23,12 +24,12 @@ const InvoicingPage = () => {
 
         {/* Right Side - Image */}
         <div
-          className="invoice-img mt-8 md:mt-0 md:ml-10 w-full md:w-1/2 flex justify-center"
+          className="invoice-Image mt-8 md:mt-0 md:ml-10 w-full md:w-1/2 flex justify-center"
           data-aos="fade-up-left"
         >
-          <img
+          <Image
             src="/images/image3.jpg"
-            alt="invoice img"
+            alt="invoice Image"
             className="w-full max-w-md md:max-w-2xl rounded-xl shadow-xl shadow-black/50 object-cover"
           />
         </div>
@@ -38,12 +39,12 @@ const InvoicingPage = () => {
       <div className="grow-wrapper flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-12 md:py-20">
         {/* Left Side - Image */}
         <div
-          className="grow-img w-full md:w-1/2 flex justify-center mb-8 md:mb-0"
+          className="grow-Image w-full md:w-1/2 flex justify-center mb-8 md:mb-0"
           data-aos="fade-up-right"
         >
-          <img
+          <Image
             src="/images/image2.jpg"
-            alt="grow-img"
+            alt="grow-Image"
             className="w-full max-w-md md:max-w-xl rounded-xl shadow-xl shadow-black/50 object-cover"
           />
         </div>

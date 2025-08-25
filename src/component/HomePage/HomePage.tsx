@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Navbar from "../NavbarPage/NavbarPage";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -8,7 +9,7 @@ export default function HomePage() {
       <main className="relative min-h-screen bg-white text-white">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 w-full h-screen overflow-hidden">
-          <img
+          <Image
             src="images/green-head1.jpg"
             alt="image"
             className="absolute inset-0 w-full h-full object-cover"
@@ -47,8 +48,8 @@ export default function HomePage() {
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <img
-              src="/images/banner-img2.png"
+            <Image
+              src="/images/banner-Image2.png"
               alt="Header Banner"
               className="w-[full] sm:w-[90%] md:w-[120%] lg:w-[130%] h-auto max-h-[750px] object-contain md:object-right"
             />

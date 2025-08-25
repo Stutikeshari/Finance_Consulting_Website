@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 const GrowPart = () => {
@@ -44,7 +45,7 @@ const GrowPart = () => {
         {/* Right Side Image with Color Frame */}
         <div className="relative flex justify-center md:justify-end">
           <div className="p-2 bg-[#155003] rounded-full">
-            <img
+            <Image
               src="/images/globe2.png"
               alt="Rotating Globe"
               className="rounded-full w-[220px] sm:w-[280px] md:w-[350px] animate-slow-spin"

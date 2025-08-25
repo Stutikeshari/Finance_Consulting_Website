@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -8,10 +9,10 @@ const AboutPage = () => {
       <div className="about-wrapper flex flex-col md:flex-row justify-around items-center h-auto md:h-screen px-6 py-12 gap-10">
         
         {/* image */}
-        <div className="about-img w-full md:w-1/2 flex justify-center" data-aos="fade-up-right">
-          <img 
-            src="/images/experience-img1.png" 
-            alt="about img" 
+        <div className="about-Image w-full md:w-1/2 flex justify-center" data-aos="fade-up-right">
+          <Image 
+            src="/images/experience-Image1.png" 
+            alt="about Image" 
             className="w-[90%] md:w-[80%] lg:w-[70%] object-contain"
           />
         </div>

@@ -14,6 +14,7 @@ import {
   Upload,
   Bell,
 } from "lucide-react";
+import Image from "next/image";
 
 const ServicePage = () => {
   // ✅ AOS setup
@@ -98,8 +99,8 @@ const ServicePage = () => {
 
           {/* Right Image */}
           <div className="lg:w-1/2 flex justify-center">
-            <img
-              src="/images/about-img1.jpg"
+            <Image
+              src="/images/about-Image1.jpg"
               alt="Banking Services"
               className="rounded-xl shadow-lg w-full max-w-[450px]"
             />
@@ -173,9 +174,9 @@ const ServicePage = () => {
 
         {/* Right Side - Image */}
         <div className="flex justify-center w-full md:w-1/2" data-aos="fade-up-left">
-          <img
+          <Image
             src="/images/image3.jpg"
-            alt="invoice img"
+            alt="invoice Image"
             className="rounded-xl shadow-xl shadow-black/50 w-full max-w-[500px]"
           />
         </div>
@@ -188,9 +189,9 @@ const ServicePage = () => {
           className="flex justify-center w-full md:w-1/2"
           data-aos="fade-up-right"
         >
-          <img
+          <Image
             src="/images/image2.jpg"
-            alt="grow-img"
+            alt="grow-Image"
             className="rounded-xl shadow-xl shadow-black/50 w-full max-w-[500px]"
           />
         </div>

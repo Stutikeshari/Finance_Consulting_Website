@@ -60,8 +60,8 @@ export default function Nav_About() {
 
         {/* Right Video/Image */}
         <div className="relative" data-aos="fade-left" >
-          <img
-            src="/images/abour-img2.jpg"
+          <Image
+            src="/images/abour-Image2.jpg"
             alt="Office Meeting"
             width={500}
             height={300}
@@ -95,7 +95,7 @@ export default function Nav_About() {
       
       {/* Team Member 1 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300" >
-        <img
+        <Image
           src="/images/team1.jpg"
           alt="Team Member 1"
           width={300}
@@ -108,7 +108,7 @@ export default function Nav_About() {
 
       {/* Team Member 2 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-        <img
+        <Image
           src="/images/team2.jpg"
           alt="Team Member 2"
           width={300}
@@ -121,7 +121,7 @@ export default function Nav_About() {
 
       {/* Team Member 3 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-        <img
+        <Image
           src="/images/team3.jpg"
           alt="Team Member 3"
           width={300}
@@ -153,28 +153,28 @@ export default function Nav_About() {
     {/* Partner Logos Grid */}
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-1.png" alt="Partner 1" className="max-h-12" />
+        <Image src="/images/company/logoipsum-1.png" alt="Partner 1" className="max-h-12" />
       </div>
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-2.png" alt="Partner 2" className="max-h-12" />
+        <Image src="/images/company/logoipsum-2.png" alt="Partner 2" className="max-h-12" />
       </div>
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-3.png" alt="Partner 3" className="max-h-12" />
+        <Image src="/images/company/logoipsum-3.png" alt="Partner 3" className="max-h-12" />
       </div>
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-4.png" alt="Partner 4" className="max-h-12" />
+        <Image src="/images/company/logoipsum-4.png" alt="Partner 4" className="max-h-12" />
       </div>
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-5.png" alt="Partner 5" className="max-h-12" />
+        <Image src="/images/company/logoipsum-5.png" alt="Partner 5" className="max-h-12" />
       </div>
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-6.png" alt="Partner 6" className="max-h-12" />
+        <Image src="/images/company/logoipsum-6.png" alt="Partner 6" className="max-h-12" />
       </div>
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-7.png" alt="Partner 7" className="max-h-12" />
+        <Image src="/images/company/logoipsum-7.png" alt="Partner 7" className="max-h-12" />
       </div>
       <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
-        <img src="/images/company/logoipsum-8.png" alt="Partner 8" className="max-h-12" />
+        <Image src="/images/company/logoipsum-8.png" alt="Partner 8" className="max-h-12" />
       </div>
     </div>
   </div>
