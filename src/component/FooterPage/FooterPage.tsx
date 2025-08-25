@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 import GoogleTranslate from "@/component/GoogleTranslate";
-import Image from "next/image";
 
 const Footer = () => {
   // Smooth scroll to top
@@ -17,7 +16,7 @@ const Footer = () => {
         
         {/* Logo + About */}
         <div>
-          <Image
+          <img
             src="/images/logo-bird.jpg"
             alt="Finance Consulting Logo"
             className="h-16 w-26 mb-4 mx-auto md:mx-0 rounded-xl"
