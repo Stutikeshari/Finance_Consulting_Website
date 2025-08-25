@@ -19,7 +19,7 @@ export default function Home() {
   // ✅ AOS setup
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: window.innerWidth < 640 ? 600 : 1200, // 👈 shorter for mobile (<640px)
       once: false,
     });
   }, []);

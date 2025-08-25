@@ -36,13 +36,13 @@ const testimonials = [
 export default function FeedbackCarousel() {
   return (
     <>
-      <div className="div-plane w-full h-26 relative bottom-0 left-0"></div> {/* plain box */}
-      <section className="py-16 bg-gray-200 text-center ">
+      <div className="div-plane w-full h-26 relative bottom-0 left-0"></div>
+      <section className="py-12 sm:py-16 bg-gray-200 text-center">
         {/* Heading */}
-        <h2 className="text-5xl md:text-3xl font-bold mb-2 text-[#084d0c]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-[#084d0c] px-4">
           Haiper score 4.8 out of 5, from 55,495 reviews
         </h2>
-        <p className="text-[#084d0c] max-w-2xl mx-auto mb-12 text-lg">
+        <p className="text-[#084d0c] text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-12 px-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
           suspendisse.
@@ -51,46 +51,54 @@ export default function FeedbackCarousel() {
         {/* Swiper Carousel */}
         <Swiper
           modules={[Autoplay, Pagination]}
-          spaceBetween={30}
+          spaceBetween={16}
           slidesPerView={1}
           pagination={{ clickable: true }}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
-            reverseDirection: true, // ✅ makes it slide RIGHT → LEFT
+            reverseDirection: true,
           }}
           breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 24 },
+            1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
-          className="max-w-6xl px-6"
+          className="max-w-6xl px-4 sm:px-6"
         >
           {testimonials.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="p-6 w-90 h-70 mb-20 border-r-2 border-b-1 border-b-lime-800 rounded-lg shadow-[6px_6px_15px_rgba(21,128,61,0.4)]
-                text-left bg-white hover:shadow-xl transition flex flex-col justify-between">
-                {/* Stars */}
-                <div className="flex mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 text-yellow-400 fill-yellow-400"
-                    />
-                  ))}
-                </div>
+  <div
+    className="w-[90%] sm:w-full mx-auto 
+      p-4 sm:p-6 mb-8 sm:mb-12 rounded-lg
+      border border-lime-800/30 
+      shadow-[4px_4px_12px_rgba(21,128,61,0.25)]
+      text-left bg-white hover:shadow-lg transition
+      flex flex-col justify-between"
+  >
+    {/* Stars */}
+    <div className="flex mb-2 sm:mb-3">
+      {[...Array(5)].map((_, i) => (
+        <Star
+          key={i}
+          className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 fill-yellow-400"
+        />
+      ))}
+    </div>
 
-                {/* Feedback */}
-                <p className="text-[#084d0c] text-lg mb-4 flex-grow">
-                  {item.feedback}
-                </p>
+    {/* Feedback */}
+    <p className="text-[#084d0c] text-xs sm:text-sm md:text-base mb-3 sm:mb-4 flex-grow leading-relaxed">
+      {item.feedback}
+    </p>
 
-                {/* Name + Role */}
-                <div>
-                  <h4 className="font-semibold">{item.name}</h4>
-                  <p className="text-[#084d0c] text-md">{item.role}</p>
-                </div>
-              </div>
-            </SwiperSlide>
+    {/* Name + Role */}
+    <div>
+      <h4 className="font-semibold text-sm sm:text-base">{item.name}</h4>
+      <p className="text-[#084d0c] text-xs sm:text-sm">{item.role}</p>
+    </div>
+  </div>
+</SwiperSlide>
+
           ))}
         </Swiper>
       </section>

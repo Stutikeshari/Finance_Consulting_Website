@@ -6,7 +6,14 @@ import FeatureCard from "@/component/FeaturesPage/FeaturePage";
 import React from "react";
 
 // ✅ import icons from lucide-react
-import { LayoutDashboard, Database, Mail, ClipboardList, Upload, Bell } from "lucide-react";
+import {
+  LayoutDashboard,
+  Database,
+  Mail,
+  ClipboardList,
+  Upload,
+  Bell,
+} from "lucide-react";
 
 const ServicePage = () => {
   // ✅ AOS setup
@@ -19,10 +26,10 @@ const ServicePage = () => {
 
   return (
     <>
+      {/* Hero Section */}
       <section className="bg-white">
-        {/* Hero Section with Parallax */}
         <div
-          className="relative h-[350px] flex items-center justify-center text-center bg-fixed bg-center bg-cover"
+          className="relative h-[250px] sm:h-[300px] md:h-[350px] flex items-center justify-center text-center bg-fixed bg-center bg-cover"
           style={{ backgroundImage: "url('/images/green-head1.jpg')" }}
         >
           {/* Overlay */}
@@ -34,32 +41,33 @@ const ServicePage = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
               Our Services
             </h1>
-            <p className="mt-3 text-lg text-gray-200 max-w-2xl mx-auto">
+            <p className="mt-3 text-base sm:text-lg text-gray-200 max-w-2xl mx-auto">
               Learn more about our mission, vision, and team.
             </p>
           </div>
         </div>
 
-        <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
+        {/* About Section */}
+        <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-10 py-12">
           {/* Left Content */}
-          <div className="lg:w-1/2 text-left mt-15">
-            <h4 className="text-sm  text-green-700 font-semibold uppercase mb-2">
+          <div className="lg:w-1/2 text-center lg:text-left space-y-6">
+            <h4 className="text-sm text-green-700 font-semibold uppercase">
               Fast & Easy Online Consulting
             </h4>
-            <h2 className="text-4xl font-bold text-[#084d0c] leading-snug mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#084d0c] leading-snug">
               Freelancers, entrepreneurs, and sole traders
             </h2>
-            <p className="text-[#084d0c] leading-relaxed mb-8">
+            <p className="text-[#084d0c] leading-relaxed">
               Enjoy quick, convenient online banking designed for independent
-              professionals, with secure access, transparent fees, and real-time
-              financial tracking anytime, anywhere.
+              professionals, with secure access, transparent fees, and
+              real-time financial tracking anytime, anywhere.
             </p>
 
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base">
               <p className="flex items-center text-gray-700">✅ Free plan available</p>
               <p className="flex items-center text-gray-700">✅ Full data privacy compliance</p>
               <p className="flex items-center text-gray-700">✅ 100% transparent costs</p>
@@ -69,25 +77,23 @@ const ServicePage = () => {
             </div>
 
             {/* Button */}
-            <div>
-              <button
-                className="
-                  bg-green-700 
-                  text-white 
-                  px-6 py-3 text-lg font-semibold 
-                  rounded-lg 
-                  border-2 border-transparent
-                  hover:bg-[#9ACD32]
-                  hover:border-green-700 
-                  hover:text-green-700
-                  hover:shadow-[6px_6px_15px_rgba(154,205,50,0.6)] 
-                  hover:scale-105 
-                  transition-all duration-300
-                "
-              >
-                Apply Now
-              </button>
-            </div>
+            <button
+              className="
+                bg-green-700 
+                text-white 
+                px-6 py-3 text-base sm:text-lg font-semibold 
+                rounded-lg 
+                border-2 border-transparent
+                hover:bg-[#9ACD32]
+                hover:border-green-700 
+                hover:text-green-700
+                hover:shadow-[6px_6px_15px_rgba(154,205,50,0.6)] 
+                hover:scale-105 
+                transition-all duration-300
+              "
+            >
+              Apply Now
+            </button>
           </div>
 
           {/* Right Image */}
@@ -95,9 +101,7 @@ const ServicePage = () => {
             <img
               src="/images/about-img1.jpg"
               alt="Banking Services"
-              width={500}
-              height={500}
-              className="rounded-xl shadow-lg"
+              className="rounded-xl shadow-lg w-full max-w-[450px]"
             />
           </div>
         </div>
@@ -105,19 +109,20 @@ const ServicePage = () => {
 
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center mb-12">
-          <h2 className="text-5xl font-bold text-[#084d0c]">Services</h2>
+        <div className="max-w-6xl mx-auto text-center mb-12 px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#084d0c]">
+            Services
+          </h2>
           <div className="flex justify-center mt-4 mb-6">
             <span className="w-16 h-1 bg-green-500 rounded-full"></span>
           </div>
-          <p className="text-[#084d0c] mt-5 text-xl">
+          <p className="text-[#084d0c] mt-5 text-base sm:text-lg md:text-xl">
             Discover powerful features designed to enhance your experience and
             improve efficiency.
           </p>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 px-6">
-          {/* Feature Cards */}
           <FeatureCard
             title="Real-time analytics"
             description="Get instant insights with our real-time data tracking and reporting tools."
@@ -151,46 +156,58 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* Service Invoice page */}
-    <div className="invoice-wrapper flex flex-col md:flex-row justify-between items-center h-screen px-6 md:px-16">
-  
-  {/* Left Side - Text */}
-  <div className="invoice-content max-w-xl text-center md:text-left space-y-6 md:ml-12">
-    <h1 className="text-5xl md:text-4xl font-bold leading-tight text-[#084d0c]">
-       Account <br/> Processing
-    </h1>
-    <p className="text-md md:text-lg text-[#084d0c]leading-relaxed">
-      Our technology platform enables businesses to create seamless payment experiences for their customers. From online payments to in-store transactions, we provide the tools and infrastructure needed to accept payments securely and efficiently.<br/> From online payments to in-store transactions, we provide the tools and infrastructure needed to accept payments securely and efficiently.
-    </p>
-    
-    {/* <button className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg">
-      Find Out More
-    </button> */}
-  </div>
-
-  {/* Right Side - Image */}
-  <div className="invoice-img mt-10 md:mt-0 md:ml-10 " data-aos="fade-up-left">
-    <img src="/images/image3.jpg" alt="invoice img" className="max-w-2xl rounded-xl shadow-xl shadow-black/50" />
-  </div>
-    </div>
-
-    {/* invoice second part */}
-      <div className='grow-wrapper flex justify-around items-center'>
-    
-        <div className="grow-img max-w-xl rounded-xl shadow-xl shadow-black/50 h-90 ml-10" data-aos="fade-up-right">
-            <img src="/images/image2.jpg" alt="grow-img"className='rounded-xl'/>
+      {/* Invoice Section */}
+      <section className="flex flex-col md:flex-row justify-between items-center gap-10 px-6 md:px-16 py-16">
+        {/* Left Side - Text */}
+        <div className="max-w-xl text-center md:text-left space-y-6">
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight text-[#084d0c]">
+            Account <br /> Processing
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg text-[#084d0c] leading-relaxed">
+            Our technology platform enables businesses to create seamless
+            payment experiences for their customers. From online payments to
+            in-store transactions, we provide the tools and infrastructure
+            needed to accept payments securely and efficiently.
+          </p>
         </div>
-        <div className="grow-content max-w-xl text-center md:text-left space-y-6 md:ml-12" >
-            <h1 className="text-5xl md:text-4xl font-bold leading-tight text-[#084d0c]">
-            Online & Finance Payment<br/> Consulting
-            </h1>
-            <p className="text-md md:text-lg text-[#084d0c] leading-relaxed">
-            Our technology platform enables businesses to create seamless payment experiences for their customers. From online payments to in-store transactions, we provide the tools and infrastructure needed to accept payments securely and efficiently.<br/>From online payments to in-store transactions, we provide the tools and infrastructure needed to accept payments securely and efficiently.
-            </p>
-           
-  
-            </div>
+
+        {/* Right Side - Image */}
+        <div className="flex justify-center w-full md:w-1/2" data-aos="fade-up-left">
+          <img
+            src="/images/image3.jpg"
+            alt="invoice img"
+            className="rounded-xl shadow-xl shadow-black/50 w-full max-w-[500px]"
+          />
         </div>
+      </section>
+
+      {/* Invoice Second Part */}
+      <section className="flex flex-col md:flex-row justify-between items-center gap-10 px-6 md:px-16 py-16">
+        {/* Left Image */}
+        <div
+          className="flex justify-center w-full md:w-1/2"
+          data-aos="fade-up-right"
+        >
+          <img
+            src="/images/image2.jpg"
+            alt="grow-img"
+            className="rounded-xl shadow-xl shadow-black/50 w-full max-w-[500px]"
+          />
+        </div>
+
+        {/* Right Content */}
+        <div className="max-w-xl text-center md:text-left space-y-6">
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight text-[#084d0c]">
+            Online & Finance Payment <br /> Consulting
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg text-[#084d0c] leading-relaxed">
+            Our technology platform enables businesses to create seamless
+            payment experiences for their customers. From online payments to
+            in-store transactions, we provide the tools and infrastructure
+            needed to accept payments securely and efficiently.
+          </p>
+        </div>
+      </section>
     </>
   );
 };

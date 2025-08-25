@@ -3,13 +3,15 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+
 import Image from "next/image";
 
 export default function Nav_About() {
      // ✅ AOS setup
       useEffect(() => {
         AOS.init({
-          duration: 1000,
+          duration: window.innerWidth < 640 ? 600 : 1200, // 👈 shorter for mobile (<640px)
           once: false,
         });
       }, []);
@@ -23,7 +25,7 @@ export default function Nav_About() {
   <div className="absolute inset-0 bg-black/60"></div>
 
   {/* Text Content */}
-  <div className="relative z-10 px-4" data-aos="zoom-in"  data-aos-duration="1000">
+  <div className="relative z-10 px-4" data-aos="zoom-in">
     <h1 className="text-4xl md:text-5xl font-bold text-white">
       About Us
     </h1>
@@ -57,8 +59,8 @@ export default function Nav_About() {
 </div>
 
         {/* Right Video/Image */}
-        <div className="relative" data-aos="fade-left" data-aos-duration="1000">
-          <Image
+        <div className="relative" data-aos="fade-left" >
+          <img
             src="/images/abour-img2.jpg"
             alt="Office Meeting"
             width={500}
@@ -74,8 +76,7 @@ export default function Nav_About() {
       </section>
 
       {/* Meet Our Team Section */}
-    <section className="bg-green-100 py-20" data-aos="fade-up"
-     data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+    <section className="bg-green-100 py-20" data-aos="fade-up">
   <div className="container mx-auto px-6 text-center" >
     {/* Heading */}
     <h2 className="text-4xl font-bold mb-4 text-[#084d0c]">
@@ -94,7 +95,7 @@ export default function Nav_About() {
       
       {/* Team Member 1 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300" >
-        <Image
+        <img
           src="/images/team1.jpg"
           alt="Team Member 1"
           width={300}
@@ -107,7 +108,7 @@ export default function Nav_About() {
 
       {/* Team Member 2 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-        <Image
+        <img
           src="/images/team2.jpg"
           alt="Team Member 2"
           width={300}
@@ -120,7 +121,7 @@ export default function Nav_About() {
 
       {/* Team Member 3 */}
       <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-        <Image
+        <img
           src="/images/team3.jpg"
           alt="Team Member 3"
           width={300}
@@ -135,7 +136,7 @@ export default function Nav_About() {
         </section>
 
         {/* our team partner section  */}
-        <section className="bg-gray-50 py-20">
+  <section className="bg-gray-50 py-20">
   <div className="container mx-auto px-6 text-center">
     {/* Heading */}
     <h2 className="text-3xl font-bold mb-4 text-[#084d0c]">
@@ -151,28 +152,28 @@ export default function Nav_About() {
 
     {/* Partner Logos Grid */}
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-1.png" alt="Partner 1" className="max-h-12" />
       </div>
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-2.png" alt="Partner 2" className="max-h-12" />
       </div>
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-3.png" alt="Partner 3" className="max-h-12" />
       </div>
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-4.png" alt="Partner 4" className="max-h-12" />
       </div>
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-5.png" alt="Partner 5" className="max-h-12" />
       </div>
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-6.png" alt="Partner 6" className="max-h-12" />
       </div>
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-7.png" alt="Partner 7" className="max-h-12" />
       </div>
-      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center hover:shadow-xl transition">
+      <div className="bg-white shadow-xlrounded-xl p-6 flex items-center justify-center  shadow-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.6)]  transition">
         <img src="/images/company/logoipsum-8.png" alt="Partner 8" className="max-h-12" />
       </div>
     </div>
@@ -218,6 +219,12 @@ export default function Nav_About() {
       </div>
     </section>
 
+    
+
+
     </div>
+
+
+
   );
 }

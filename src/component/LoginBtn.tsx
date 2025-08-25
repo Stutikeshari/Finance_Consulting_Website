@@ -27,30 +27,15 @@ const LoginPage = () => {
         </form>
         <p className="mt-4 text-sm text-gray-600 text-center">
           Don’t have an account?{" "}
-          <Link
-  href="/signup"
-  className="
-    text-green-600 hover:underline
-  "
->
-  Signup
-</Link>
+          <Link href="/signup" className="text-green-600 hover:underline">Signup</Link>
+        </p>
 
 {/* Back to Home Button */}
         <div className="mt-6 text-center">
-          <Link
-            href="/"
-            className="
-              bg-green-300 hover:bg-gray-300 text-green-700 text-md
-              px-5 py-2 rounded-md font-medium 
-              transition-all duration-300
-            "
-          >
-            ← Back to Home
-          </Link>
+          <Link href="/" className="bg-green-300 hover:bg-gray-300 text-green-700 text-md px-5 py-2 rounded-md font-medium transition-all duration-300">← Back to Home</Link>
         </div>
           
-        </p>
+        
       </div>
     </div>
   );

@@ -15,6 +15,83 @@
 }
 
 
+/* Google Translate box custom style */
+#google_translate_element2 .goog-te-gadget {
+  font-size: 0; /* unwanted extra text hide */
+}
+
+#google_translate_element2 .goog-te-gadget select {
+  background-color: #ffffff !important; /* White box */
+  color: #000000 !important;           /* Black text */
+  border: 1px solid #ccc !important;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+
+/* Hide top Google Translate toolbar */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+/* Body position fix after hiding toolbar */
+body {
+  top: 0px !important;
+}
+
+/* Hide left side feedback popup */
+.goog-te-balloon-frame,
+#goog-gt-tt, /* Tooltip */
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+iframe.goog-te-banner-frame {
+  display: none !important;
+}
+/* 🔹 Hide the top blue Google Translate bar completely */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+.goog-te-banner {
+  display: none !important;
+}
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+/* 🔹 Reset body position after hiding toolbar */
+body {
+  top: 0px !important;
+}
+
+/* 🔹 Hide tooltip + feedback popup */
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover,
+.goog-text-highlight {
+  display: none !important;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  left: 0;
+  top: 0;
+  height: 39px;
+  width: 100%;
+  z-index: 10000001;
+  position: fixed;
+  border: none;
+  /* border-bottom: ; */
+  margin: 0;
+  /* box-shadow: 0 0 8px 1px #999; */
+}
+
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
