@@ -89,7 +89,7 @@ const Footer = () => {
 
       {/* Bottom strip */}
       <div className="bg-green-950 py-4 text-center text-gray-400 text-sm relative">
-        © {new Date().getFullYear()} Finance Consulting. All Rights Reserved.
+        © {new Date().getFullYear()} Finance Consulting. All Rights Reserved. created by StutiKeshari
       </div>
 
       {/* Go to Top Button */}

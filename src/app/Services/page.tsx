@@ -161,7 +161,7 @@ const ServicePage = () => {
         {/* Left Side - Text */}
         <div className="max-w-xl text-center md:text-left space-y-6">
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight text-[#084d0c]">
-            Account <br /> Processing
+            Account Processing
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-[#084d0c] leading-relaxed">
             Our technology platform enables businesses to create seamless
