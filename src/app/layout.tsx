@@ -1,5 +1,6 @@
 import "./globals.css";
 import LayoutWrapper from "../component/LayoutWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "My Website",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         <LayoutWrapper>{children}</LayoutWrapper>
+        <SpeedInsights />
       </body>
     </html>
   );
