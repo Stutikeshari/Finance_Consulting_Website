@@ -120,7 +120,7 @@ const Navbar = () => {
           </div>
 
           {/* Login Button (Desktop/Tablet only) */}
-          <Link
+          {/* <Link
             href="/login"
             className="hidden sm:block bg-[#9ACD32] hover:bg-green-700 text-white 
               px-5 py-1.5 rounded-md font-medium 
@@ -129,6 +129,17 @@ const Navbar = () => {
               hover:scale-105 transition-all duration-300"
           >
             Login
+          </Link> */}
+
+          <Link
+            href="#"
+            className="hidden sm:block bg-[#9ACD32] hover:bg-green-700 text-white 
+              px-5 py-1.5 rounded-md font-medium 
+              border-2 border-transparent
+              hover:border-[#9ACD32] hover:shadow-[4px_4px_10px_rgba(154,205,50,0.6)] 
+              hover:scale-105 transition-all duration-300"
+          >
+            Whatsapp
           </Link>
 
           {/* Mobile Menu Button */}
@@ -208,7 +219,7 @@ const Navbar = () => {
         </div>
 
         {/* Login in mobile */}
-        <div className="mt-6 px-6">
+        {/* <div className="mt-6 px-6">
           <Link
             href="/login"
             onClick={() => setMobileOpen(false)}
@@ -216,7 +227,7 @@ const Navbar = () => {
           >
             Login
           </Link>
-        </div>
+        </div> */}
       </div>
 
        {/* Google Translate Dropdown */}

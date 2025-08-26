@@ -9,6 +9,11 @@
     transform: rotate(360deg);
   }
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* remove horizontal scroll */
+}
 
 .animate-slow-spin {
   animation: slow-spin 30s linear infinite; /* 30s = very slow */
@@ -90,6 +95,7 @@ body {
   margin: 0;
   /* box-shadow: 0 0 8px 1px #999; */
 }
+
 
 
 /* :root {

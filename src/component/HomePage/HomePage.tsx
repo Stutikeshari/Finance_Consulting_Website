@@ -21,7 +21,7 @@ export default function HomePage() {
         <div className="div-plane w-full h-26 relative bottom-0 left-0"></div>
 
         {/* Hero Section */}
-        <section className="relative z-10 flex flex-col md:flex-row items-center h-screen px-4 sm:px-6 md:px-12">
+        <section className="relative z-10 flex flex-col md:flex-row items-center h-screen pl-4 sm:pl-6 md:pl-12">
           {/* Left side text */}
           <div
             className="w-full md:w-1/2 text-center md:text-left place-self-center"
@@ -43,15 +43,15 @@ export default function HomePage() {
 
           {/* Right side image */}
           <div
-            className="w-full md:w-1/2 flex justify-center md:justify-end items-center mt-6 md:mt-0"
+            className="w-full md:w-1/2 flex justify-end md:justify-end items-end mt-6 md:mt-0 rounded-lg shadow-lg overflow-hidden"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <img
-              src="/images/banner-img2.png"
-              alt="Header Banner"
-              className="w-[full] sm:w-[90%] md:w-[120%] lg:w-[130%] h-auto max-h-[750px] object-contain md:object-right"
-            />
+            <img 
+  src="/images/banner-img2.png" 
+  alt="Header Banner" 
+  className="w-full h-auto max-h-[950px] object-cover object-right"
+/>
           </div>
         </section>
       </main>
